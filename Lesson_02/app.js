@@ -13,8 +13,8 @@ function Czworokat(nazwa,typ_czworokata, dlugosc_bokow){
 Czworokat.prototype = Object.create(Figura.prototype);
 Czworokat.prototype.constructor = Czworokat;
 
-function Prostokat(nazwa,typ_czworokata, dlugosc_bokow){
-  Figura.call(this,nazwa,"Prostokat", dlugosc_bokow);
+function Prostokat(nazwa, dlugosc_bokow){
+  Czworokat.call(this,nazwa,"Prostokat", dlugosc_bokow);
 }
 
 Prostokat.prototype = Object.create(Czworokat.prototype);
@@ -34,12 +34,11 @@ Prostokat.prototype.podajObwod = function (){
 
 
 
-var first = new Prostokat('xd', [1,2,1,2] );
+var first = new Prostokat('xd', [1,2] );
 console.log(first);
-console.log(first.podajObwod());
+console.log("Obwod: " + first.podajObwod());
+console.log("Pole " + first.podajPole());
 
-//var first = new Prostokat(1,2);
 
-//var prostokat = new Prostokat("";)
 
-// https://github.com/robgor3/Sealcode_workshops_advanced/blob/master/Zadania_na_zajeciach/Zajecia_1/exercise_151.js
+
