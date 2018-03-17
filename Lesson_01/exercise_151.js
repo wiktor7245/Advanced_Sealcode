@@ -34,7 +34,7 @@ Prostokat.prototype.podajObwod = function (){
 
 
 
-var first = new Prostokat('xd', [1,2] );
+var first = new Prostokat('xd', [5,8] );
 console.log(first);
 console.log("Obwod: " + first.podajObwod());
 console.log("Pole " + first.podajPole());
