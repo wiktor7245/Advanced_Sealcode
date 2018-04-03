@@ -1,4 +1,4 @@
-//dopisać obsługę błędu związanego z argumentami i ogarnąc to dopisywanie po określonym czasie
+//dopisać obsługę błędu związanego z argumentami i ogarnąc to dopisywanie po określonym czasien
 
 var fs = require('fs');
 var counter = process.argv[2];
